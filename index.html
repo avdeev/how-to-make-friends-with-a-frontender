@@ -1,0 +1,722 @@
+<!-- https://pepelsbey.net/pres/devs-laugh/ -->
+<!-- добавить скрепку из MS (идея)? -->
+<!-- раскидать практические советы -->
+<!-- Ставить шутку про Фиксиков -->
+<!-- показать боль! -->
+<!-- форматы изображений https://caniuse.com/avif -->
+<!-- контрастность -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P6SW86D");
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Как подружиться c фронтенд-разработчиком</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --ribbon-size: 40px;
+        --slide-side: 41px;
+        --color-grey: #353535;
+      }
+
+      .progress::before {
+        background-color: #ff0000;
+      }
+
+      .slide {
+        padding-top: 51px;
+        background-image: url("pictures/slide-cover.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+
+      .slide.clear {
+        background-image: none;
+      }
+
+      .slide::after {
+        top: auto;
+        bottom: 10px;
+        left: auto;
+        right: 30px;
+        background: none;
+        color: #1a1a1a;
+      }
+
+      .slide h2 {
+        color: #1a1a1a;
+        font-size: 60px;
+      }
+
+      .slide h2.shout {
+        font-size: 100px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 80%;
+      }
+
+      .slide h2.shout.elevated {
+        margin-top: -35px;
+      }
+
+      .slide h2.shout.small {
+        font-size: 3em;
+      }
+
+      .slide .brand {
+        color: #ff0000;
+      }
+
+      .slide ol,
+      .slide ul {
+        padding-left: 40px;
+      }
+
+      .slide li {
+        font-size: 23px;
+      }
+
+      .slide pre {
+        font-size: 21px;
+        padding-left: 41px;
+      }
+
+      .cover {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P6SW86D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="caption">
+      <h1>Как подружиться c фронтенд-разработчиком</h1>
+      <p>
+        <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+        <a href="https://mish.design/">Mish</a>
+      </p>
+    </header>
+
+    <section class="slide clear" id="cover">
+      <div style="width: 640px; padding-top: 30px; margin-left: -10px">
+        <h2>Как подружиться c фронтенд-разработчиком</h2>
+        <p>
+          <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+          <a href="https://mish.design/">Mish</a>
+        </p>
+      </div>
+      <style>
+        .shower #cover {
+          --slide-side: 60px;
+        }
+        #cover {
+          background: #fff url("pictures/title-cover.png") no-repeat center center;
+          background-size: contain;
+        }
+        #cover h2 {
+          margin: 0;
+          color: #000;
+          font-size: 62px;
+        }
+        #cover p {
+          margin: 18px 0 0;
+          color: #000;
+          font-size: 24px;
+        }
+        #cover p a {
+          color: #000;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/tweet1.png" alt="" style="width: 80%" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/fc2022.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/skillbox.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/jsonapi_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/docker_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <a href="https://www.youtube.com/watch?v=pB4_QM_iZEQ" target="_blank">
+        <img class="cover w" src="pictures/podlodka.jpg" alt="" />
+      </a>
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/maxresdefault.jpg" alt="" />
+    </section>
+
+    <!-- дистанция между дизайнерами, её надо сокращать, как её сокращать, время ТТМ, думать метриками -->
+    <section class="slide">
+      <img class="cover w" src="pictures/we-dist.png" alt="" />
+      <h2 class="shout small" style="top: 10%; z-index: 1">Дистанция</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Как стать ближе?</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">9</span><br />Компоненты</h2>
+    </section>
+
+    <!-- 50 оттенков серого -->
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/steam.webp" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/textInput.png" alt="" style="min-width: 110%" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/material-states.png" alt="" style="height: 90%" />
+    </section>
+
+    <section class="slide clear" style="background-color: #f2f2f2">
+      <img class="cover h" src="pictures/figma-components.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/components.7fbb3771.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/we-better.png" alt="" />
+      <h2 class="shout small" style="top: 10%; z-index: 1">Компоненты</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Проектируйте, а&nbsp;не&nbsp;рисуйте</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">8</span><br />Адаптив</h2>
+    </section>
+
+    <!-- о чём забывает дизайнер, который рисует много адаптивов -->
+    <!-- под устройство еще -->
+    <!-- не хватает часто ultrawide -->
+
+    <section class="slide">
+      <h2 class="shout">Веб адаптивен <nobr>по-умолчанию</nobr></h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/mdn-rwd-liquid.png" alt="" />
+    </section>
+
+    <!-- TODO добавить картинку -->
+    <section class="slide">
+      <h2 class="shout">Сколько брейкпойнтов?</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/screen_sizes_map.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover w" src="pictures/rb-7-adaptives.png" alt="" />
+    </section>
+
+    <!-- ИЛЛЮСТРАЦИЯ отрисовывайте брейкпойнты, где что-то меняется ПОКАЗАТЬ -->
+    <section class="slide">
+      <h2 class="shout">Только то, что&nbsp;изменяется</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/adaptive.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">CSS Container Queries</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #f2e8d5">
+      <img class="cover h" src="pictures/css-cq-caniuse.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/container-query-diagram.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/container-query-examples.png" alt="" />
+    </section>
+
+    <!-- mobile first используется, не панацея -->
+    <section class="slide clear" style="background-color: #b1e3d1">
+      <img class="cover w" src="pictures/partners_blog_progressive_enhancement_hero.webp" alt="" />
+    </section>
+
+    <!-- авто лейаут углубиться, дополнительного мясо -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/auto-layout-panel.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Flexbox</h2>
+
+      <pre>
+        <code>.block {</code>
+        <code>  display: flex;</code>
+        <code>  flex-flow: row wrap;</code>
+        <code>  justify-content: flex-end;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/we-better.png" alt="" />
+      <h2 class="shout small" style="top: 10%; z-index: 1">Auto Layout</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Продумывайте адаптив</h2>
+    </section>
+
+    <!-- auto layout позволяет делать респонсив -->
+    <!-- вопросы: сколько брейкпойнтов вы используете? -->
+    <!-- Размер контента (дизайнер отвечает: Не должно быть длинным) -->
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">7</span><br />Платформа</h2>
+    </section>
+
+    <!-- вставить картинкой -->
+    <!-- раскрыть закон Якоба -->
+    <section class="slide">
+      <h2 class="shout">Закон Якоба</h2>
+    </section>
+
+    <!-- Контролы -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/chrome-controls-redesign-new.webp" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/input-date.webp" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/picker.webp" alt="" />
+    </section>
+
+    <!-- прежде чем рисовать натив, сходите к фронту, узнайте что он может использовать -->
+    <section class="slide">
+      <h2 class="shout">Не проектируйте заново нативные элементы</h2>
+    </section>
+
+    <!-- шрифты - банально -->
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">6</span><br />Шрифты</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/fonts.png" alt="" style="height: 100px" />
+    </section>
+
+    <section class="slide">
+      <h2>@font-face</h2>
+
+      <pre>
+        <code>@font-face {</code>
+        <code>  font-family: "Open Sans";</code>
+        <code>  src: <mark>url("/fonts/OpenSans-Regular-webfont.woff2")</mark> format("woff2");</code>
+        <code>}</code>
+        <code> </code>
+        <code>h1 {</code>
+        <code>  font-family: "Open Sans"</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/webfont.avif" alt="" style="height: 90%" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/google-fonts.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/github.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Стек системных шрифтов</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Sans-serif</h2>
+
+      <pre>
+        <code>font-family: -apple-system, BlinkMacSystemFont, avenir next,</code>
+        <code>    avenir, segoe ui, helvetica neue, helvetica, Cantarell,</code>
+        <code>    Ubuntu, roboto, noto, arial, sans-serif;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Преимущества</h2>
+
+      <ol style="margin-left: 5px">
+        <li style="font-size: 1.2em">Быстрая загрузка</li>
+        <li style="font-size: 1.2em" class="next">Отличная поддержка</li>
+        <li style="font-size: 1.2em" class="next">Привычный пользователям</li>
+      </ol>
+    </section>
+    <!-- показать пример, где можно использовать системные шрифты -->
+
+    <section class="slide">
+      <h2 class="shout">Изучайте популярные шрифты</h2>
+    </section>
+    <!-- google fonts не пояснять -->
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">5</span><br />Скролл</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/scroll.avif" alt="" style="width: 90%" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">60 кадров в&nbsp;секунду<br />(FPS)</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #f8f6f6">
+      <img class="cover w" src="pictures/pipeline-1.png" alt="" style="width: 90%" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/60fps.avif" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Минимум вычислений на&nbsp;скрол</h2>
+    </section>
+
+    <!-- курсоры - многие осознанно так делают -->
+    <!-- <section class="slide">
+      <h2 class="shout brand elevated">
+        <span style="font-size: 1.5em">8</span><br />Играться с&nbsp;курсором
+      </h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/changecur.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Игра: найди курсор</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Медленно (1)</h2>
+
+      <pre>
+        <code>body { cursor: <mark>url('YourCursorImage.png')</mark>, auto; }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Медленно (2)</h2>
+
+      <pre>
+        <code class="next">body { cursor: none; }</code>
+        <code class="next">.pointer { width: 12px; height: 12px; background: red; }</code>
+        <code class="next"> </code>
+        <code class="next"><mark>window.addEventListener('mousemove', moveCursor)</mark></code>
+      </pre>
+    </section> -->
+
+    <!-- <section class="slide">
+      <h2 class="shout brand elevated">
+        <span style="font-size: 1.5em">8</span><br />Не&nbsp;готовить иконки
+      </h2>
+    </section> -->
+
+    <!-- надо в SVG (вектор) -->
+    <!-- <section class="slide">
+      <h2 class="shout">Готовьте иконки</h2>
+    </section> -->
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">4</span><br />Состояния</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-search-full.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/rb-empty-state.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-error.png" alt="" style="height: 80%" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="place l" src="pictures/rb-like.png" height="100%" alt="" />
+      <img class="place next" src="pictures/rb-subscriptions.png" height="100%" alt="" />
+      <img class="place r next" src="pictures/rb-unauth.png" height="100%" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Сверьтесь<br />с чеклистом</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/checklist-1.png" alt="" style="height: 80%" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">3</span><br />Контент</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #f0ebf8">
+      <img class="cover h" src="pictures/content-overflow.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/overflow.webp" alt="" style="height: 70%" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Работайте с&nbsp;контентом</h2>
+    </section>
+
+    <!-- --- -->
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">2</span><br />Рефакторинг</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/poslednij-chelovek-na-zemle_1633118313.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img
+        class="cover w"
+        src="pictures/60e4ca1953c5c58dc46d6861_Complicated figma file.jpg"
+        alt=""
+      />
+    </section>
+
+    <!-- структура макетов (использовать эмоджи) -->
+
+    <section class="slide">
+      <h2 class="shout">Смотрят чаще, чем&nbsp;редактируют</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-pages-1.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-meta.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-meta-1.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #f5f5f5">
+      <img class="cover h" src="pictures/comment-1.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #f5f5f5">
+      <img class="cover w" src="pictures/comment-2.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-meta-blured.png" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/bad-layers.png" alt="" />
+    </section>
+
+    <!-- особенно актуально при разработке дизайн-систем -->
+    <section class="slide clear" style="background-color: #fafafa">
+      <img class="cover h" src="pictures/rb-layers.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/figma-plugins.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/figma-super-tidy.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/figma_design_lint.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/figma-clean-document.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Уменьшайте <nobr>дизайн-долг</nobr></h2>
+    </section>
+
+    <!-- --- -->
+    <section class="slide">
+      <h2 class="shout brand elevated"><span style="font-size: 1.5em">1</span><br />Разработка</h2>
+    </section>
+
+    <!-- https://uxtools.co/survey/2022/ui-design -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/figma_stat.png" alt="" style="height: 90%" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/google_chrome.png" alt="" style="height: 90%" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Представляйте конечную цель</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/triz.jpg" alt="" style="height: 90%" />
+    </section>
+
+    <!-- https://ksoftware.livejournal.com/106329.html -->
+    <section class="slide">
+      <h2 class="shout">Идеальный конечный результат</h2>
+    </section>
+
+    <!-- Разрыв между дизайнерами и разработчиками нужно закрывать -->
+    <!-- Идеальный способ - быть обоими разработчиком -->
+    <section class="slide">
+      <img class="cover w" src="pictures/img-3xCuHD.png" alt="" style="width: 80%" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Нет разработчика&nbsp;&mdash; нет проблем</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/notion.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/tilda.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/zero-block.png" alt="" />
+    </section>
+
+    <!-- TODO: пример Тильды -->
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/webflow.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/apps.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Изучайте разные инструменты</h2>
+    </section>
+    <!-- --- -->
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/we-friends.png" alt="" />
+      <h2 class="shout small" style="top: 10%; z-index: 1">Сокращаем дистанцию</h2>
+    </section>
+
+    <!-- чеклист в notion, пришлём письмо -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/checklist.png" alt="" />
+    </section>
+
+    <!-- картинку психопата -->
+    <section class="slide">
+      <h2 class="shout small" style="font-size: 2em">
+        Проектируйте макеты, будто верстать их будет склонный к&nbsp;насилию психопат, который
+        знает, где вы&nbsp;живете
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2>👏 Спасибо!</h2>
+
+      <ul>
+        <li>👨 Алексей Авдеев</li>
+        <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+        <li>
+          🌐
+          <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
+        </li>
+        <li>
+          🌐
+          <a href="https://vk.com/alexey.avdeev">vk.com/alexey.avdeev</a>
+        </li>
+
+        <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+      </ul>
+
+      <img
+        src="pictures/iam.jpeg"
+        alt="я"
+        style="height: 230px; position: absolute; right: 60px; top: 60px"
+      />
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+  </body>
+</html>
